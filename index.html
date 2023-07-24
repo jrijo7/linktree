@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--Definindo um documento html5-->
+<html lang="pt-br" class="light">
+  <!--Temos o html em si, document element ou root element que é o elemento raíz do html-->
+  <!--Temos um atributo lang que é a linguagem-->
+  <!--Temos dois filhos, head e body-->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--tag responsável para ajustar configurações do documento que não são visíveis para quem está acessando a nossa página-->
+    <meta charset="UTF-8" />
+    <!--a propriedade charset define os conjuntos de caracteres a serem utilizados na página-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- compatibilidade com os navegadores mais antigos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--viewport está definindo que a parte visível tenha o conteúdo ali dentro como largura do dispositivo device-->
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/perfil1.png"
+          alt="Foto desenhada de João Victor de camisa branca, fundo branco e com alguns respingos de tinta."
+        />
+        <p>@jrijo.7</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button>
+        </button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100007786775798" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/joaorijo_gomes" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="mailto:joaovictor_gomes.7@hotmail.com" target="_blank"
+            >Email</a
+          >
+        </li>
+        <li>
+          <a href="https://t.me/keytarou" target="_blank">Telegram</a>
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/jrijo7" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/j_rijo.7/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-56b5481b6/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito com 🤍 por João Rijo
+      </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
